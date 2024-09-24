@@ -68,10 +68,10 @@ spec:
                 name: alethic-ism-processor-gemini-secret
                 key: DATABASE_URL
 
-          - name: gemini_API_KEY
+          - name: GEMINI_API_KEY
             valueFrom:
               secretKeyRef:
                 name: alethic-ism-processor-gemini-secret
-                key: gemini_API_KEY
+                key: GEMINI_API_KEY
       imagePullSecrets:
       - name: regcred
