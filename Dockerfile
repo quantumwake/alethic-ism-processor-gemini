@@ -38,7 +38,7 @@ RUN conda env create -f environment.yaml
 RUN conda init bash
 
 # Activate the environment, and make sure it's activated:
-RUN echo "conda activate alethic-ism-processor-openai" > ~/.bashrc
+RUN echo "conda activate alethic-ism-processor-gemini" > ~/.bashrc
 
 # display information about the current activation
 RUN conda info
@@ -69,6 +69,6 @@ RUN rm -rf .*
 # Set the entrypoint script to be executed
 ENTRYPOINT ["entrypoint.sh"]
 
-# Run the pulsar consumer (ism processor for openai)
+# Run the pulsar consumer (ism processor for google gemini)
 CMD ["python", "main.py"]
 
