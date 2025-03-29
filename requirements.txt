@@ -6,4 +6,5 @@ python-dotenv
 pydantic
 psycopg2
 google-generativeai
+protobuf
 mako
