@@ -30,7 +30,7 @@ docker run -d \
   -e Gemini_API_KEY="your_api_key_here" \
   -e LOG_LEVEL=DEBUG \
   -e ROUTING_FILE=/app/routing-nats.yaml \
-  -e STATE_DATABASE_URL="postgresql://postgres:postgres1@host.docker.internal:5432/postgres" \
+  -e DATABASE_URL="postgresql://postgres:postgres1@host.docker.internal:5432/postgres" \
   krasaee/alethic-ism-processor-gemini:latest
 ```
 
